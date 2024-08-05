@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suraj kumar - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+   
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#">SURAJ KUMAR</a>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-slider">
+            <div class="slide fade" style="background-image: url('images/pic2.jpg');">
+                <div class="hero-content">
+                    <h1 class="welcometext">Welcome to My Portfolio</h1>
+                    <p>I'm Suraj kumar, a Web Developer.</p>
+                    <a id="homesliderbutton" href="#portfolio" class="cta-button">View My Work</a>
+                </div>
+            </div>
+            <div class="slide fade" style="background-image: url('images/pic3.jpg');">
+                <div class="hero-content">
+                    <h1 class="welcometext">Explore My Projects</h1>
+                    <p>Innovative Solutions for Your Needs.</p>
+                    <a id="homesliderbutton" href="#portfolio" class="cta-button">Check Them Out</a>
+                </div>
+            </div>
+            <div class="slide fade" style="background-image: url('images/pic7.jpg');">
+                <div class="hero-content">
+                    <h1 class="welcometext">Creative Designs</h1>
+                    <p>Building Beautiful and Functional Websites.</p>
+                    <a href="#portfolio" class="cta-button">See More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hi, I'm Suraj Kumar, a passionate web developer with expertise in HTML, CSS, and JavaScript. I have hands-on experience in front-end development, gained through internships at Cognifyz and IBM, where I worked on projects like creating a sustainable development website and an educational communication platform. </p>
+            <a class="aboutbutton" href="about.html" class="cta-button">Explore more</a>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <i class="fas fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Experience with HTML, CSS, JavaScript, and modern frameworks.</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Graphic Design</h3>
+                    <p>Proficiency in Canva Creative Suite and other design tools.</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-database"></i>
+                    <h3>Database Management</h3>
+                    <p>Skilled in SQL, NoSQL, and database optimization techniques.</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Responsive Design</h3>
+                    <p>Ensuring websites look great on all devices, from desktops to smartphones.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <div class="portfolio-items">
+                <!-- Each portfolio items -->
+                <div class="portfolio-item">
+                    <img src="images/getinteract-removebg-preview.png" alt="Project 1">
+                    <h3>Get Interact - Student helper App</h3>
+                    
+                    <a href="getinteract.html" class="play-button">View Now</a>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/project2.png" alt="Project 2">
+                    <h3>Play School - Educational Gaming Website</h3>
+                    <a href="getinteract.html" class="play-button">View Now</a>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/project3.png" alt="Project 3">
+                    <h3>Front-End Development</h3>
+                    <a href="getinteract.html" class="play-button">View Now</a>
+                </div>
+                <!-- Add more portfolio items as needed -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button id="submit-button" type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    
+<!-- HOME PAGE SLider JS-->
+    <script>
+        let slideIndex = 0;
+        const slides = document.getElementsByClassName("slide");
+    
+        function showSlides() {
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.opacity = 0;
+                slides[i].style.transform = "scale(1.2)";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.opacity = 1;
+            slides[slideIndex - 1].style.transform = "scale(1.1)";
+            setTimeout(showSlides, 4000); // Change image every 4 seconds
+        }
+    
+        showSlides();
+    </script>
+
+    <footer>
+        <div class="container">
+            <div class="socials">
+                <a href="https://www.facebook.com/surajraj.yadav.397" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://x.com/SY_GamingPlanet"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/suraj-yadav-b8482523b/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app&original_referer=" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/Surraj007" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+            <p>&copy; 2024 Suraj Kumar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
