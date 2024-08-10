@@ -82,8 +82,14 @@ h1::after {
 }
 
 .project-content img {
-    width: 100%;
-    height: auto;
+    width: 75%;
+    height: 75%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.project-content video {
+    width: 50%;
+    height: 50%;
     border-radius: 8px;
     margin-bottom: 20px;
 }
@@ -164,6 +170,7 @@ footer p {
 
     .tabs {
         flex-direction: column;
+        margin-top: 110px;
     }
 
     .tab-button {
