@@ -9,6 +9,16 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', serif;
 }
+.upperbtn{
+    transition: color 0.3s, transform 0.3s;
+}
+
+.upperbtn:hover{
+   
+        color: #ff5722;
+        transform: scale(1.1);
+    
+}
 
 a {
     text-decoration: none;
@@ -321,7 +331,7 @@ footer::before {
 .about {
     background: url('images/pic4.jpg') no-repeat center center/cover;
     color: #333;
-    padding: 100px 20px;
+    padding: 125px 20px;
     position: relative;
     z-index: 1;
 }
@@ -412,13 +422,13 @@ footer::before {
 /* Responsive Styles */
 @media (max-width: 1200px) {
     .container {
-        padding: 0 10px;
+        padding: 0 0px;
     }
 }
 
 @media (max-width: 1024px) {
     .hero-content {
-        height: 400px;
+        height: 300px;
     }
 
     .skills-grid .skill,
@@ -499,6 +509,7 @@ footer::before {
         font-size: 0.9em;
     }
 }
+
 #websitelink{
     margin: 10px;
     padding: 10px;
