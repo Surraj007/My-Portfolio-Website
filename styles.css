@@ -331,7 +331,7 @@ footer::before {
 .about {
     background: url('images/pic4.jpg') no-repeat center center/cover;
     color: #333;
-    padding: 125px 20px;
+    padding: 150px 20px;
     position: relative;
     z-index: 1;
 }
@@ -406,6 +406,42 @@ footer::before {
     color: #ff5722;
     transform: scale(1.1);
 }
+
+/* RESUME DOWNLOAD SECTION */
+.resume-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+.resume-section h2 {
+    font-size: 2.5em;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.resume-section p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.resume-button {
+    background: #ff5722;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+.resume-button:hover {
+    background-color: #482115;
+}
+
+
 
 /* Animations */
 @keyframes fadeIn {
