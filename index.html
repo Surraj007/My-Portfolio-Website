@@ -18,11 +18,11 @@
                 <a href="#">SURAJ KUMAR</a>
             </div>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a class="upperbtn" href="#home">Home</a></li>
+                <li><a class="upperbtn" href="#about">About</a></li>
+                <li><a class="upperbtn" href="#skills">Skills</a></li>
+                <li><a class="upperbtn" href="#portfolio">Portfolio</a></li>
+                <li><a class="upperbtn" href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -79,7 +79,7 @@
                 <div class="skill">
                     <i class="fas fa-database"></i>
                     <h3>Database Management</h3>
-                    <p>Skilled in SQL, NoSQL, and database optimization techniques.</p>
+                    <p>Skilled in MySQL, and database optimization techniques.</p>
                 </div>
                 <div class="skill">
                     <i class="fas fa-mobile-alt"></i>
@@ -111,11 +111,13 @@
                     <h3>Front-End Development</h3>
                     <a href="getinteract.html" class="play-button">View Now</a>
                 </div>
-                <!-- Add more portfolio items as needed -->
+                <a class="aboutbutton" href="getinteract.html" class="cta-button">Explore more</a>
+                <!-- Adding more portfolio in future   -->
             </div>
         </div>
     </section>
 
+     <!-- live running feedback section  -->
     <section id="contact">
         <div class="container">
             <h2>Contact Me</h2>
@@ -144,7 +146,7 @@
             if (slideIndex > slides.length) { slideIndex = 1 }
             slides[slideIndex - 1].style.opacity = 1;
             slides[slideIndex - 1].style.transform = "scale(1.1)";
-            setTimeout(showSlides, 3000); // Change image every 3 seconds
+            setTimeout(showSlides, 4000); // Change image every 4 seconds
         }
     
         showSlides();
