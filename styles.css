@@ -478,6 +478,9 @@ footer::before {
         flex-direction: column;
         align-items: center;
     }
+    .hero-slider{
+        transform: scale(1.3);
+    }
 
     .skill, .portfolio-item {
         flex: 1 1 100%;
@@ -512,6 +515,14 @@ footer::before {
 }
 
 @media (max-width: 480px) {
+
+    .hero-slider{
+        transform: scale(1.3);
+    }
+   
+    .hero-content {
+        height: 200px;
+    }
     .hero-content h2 {
         font-size: 2em;
     }
