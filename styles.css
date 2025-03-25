@@ -168,27 +168,23 @@ nav ul li a {
 .play-button:hover {
     background-color: #482115;
 }
-
 #submit-button {
     transition: background-color 0.3s;
 }
-
 #submit-button:hover {
     background-color: #482115;
 }
-
 /* Section Styles */
 section {
     padding: 60px 20px;
     text-align: center;
 }
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    
 }
-
-h2 {
+h2{
     margin-bottom: 20px;
     font-size: 2.5em;
     font-family: 'Playfair Display', serif;
